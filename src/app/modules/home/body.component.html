@@ -1,0 +1,269 @@
+<!-- navbar is here!
+<!-- place nav here to set it at the top! -->
+<div>
+  <div class="" [ngClass]="getBodyClass()">
+    <nav
+  id="sticky-banner"
+  class="fixed top-0 left-0 z-50 w-full bg-black p-4 flex justify-between items-center  md:px-10"
+>
+  <!-- Logo -->
+  <div class="inline-flex text-white text-2xl ml-4">
+    <span class="">The</span>
+    <span class="ml-1">Business</span>
+    <span class="ml-1">Analyst</span>
+  </div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <button
+  type="button"
+    class="block sm:hidden text-white focus:outline-none"
+    [ngClass]="menu"
+    (click)="toggleMenu()"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"
+      ></path>
+    </svg>
+  </button>
+
+  <!-- Nav Links -->
+  <div
+    id="menu"
+    class="hidden gap-7 sm:flex-row flex-col absolute sm:static bg-black sm:bg-transparent top-full left-0 w-full sm:w-auto sm:flex items-center"
+  >
+    <div class="flex flex-col sm:flex-row text-center sm:text-left gap-4 sm:gap-7 text-white text-sm sm:text-base my-2 sm:my-0 ml-4 sm:ml-0">
+      <a href="#">Homepage</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Projects/Clients</a>
+    </div>
+
+    <div class="my-2 sm:my-0">
+      <a
+        class="inline-block cursor-pointer py-2 px-4 bg-gray-200 text-black rounded-full hover:bg-gray-300 transition"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
+
+    <!-- place nav here to set it inside the body.. so it does not overflow to the lest! -->
+    <!-- <div class="mt-14">
+      <router-outlet></router-outlet>
+    </div> -->
+
+    <!-- Footer starts here -->
+    <!-- component -->
+  </div>
+
+  <div class="relative h-[100vh] w-full">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 bg-[url('\assets\nasa-Q1p7bh3SHj8-unsplash.jpg')] bg-cover bg-center"
+    ></div>
+
+    <!-- Overlay -->
+    <div
+      class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"
+    >
+      <!-- <div class="flex flex-col text-white leading-tight text-[5vh] sm:text-[11vh]"> -->
+        <!-- <div class="font-sans">Smart-Thinking &</div> -->
+        <app-dynamic-text></app-dynamic-text>
+      <!-- </div> -->
+      <!-- <button class="bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200">
+        Click Me
+      </button> -->
+    </div>
+  </div>
+
+  <!-- \assets\nasa-Q1p7bh3SHj8-unsplash.jpg -->
+
+  <!-- <div class="bg-[url('\assets\thomas-tastet-hSODeSbvzE0-unsplash.jpg')] mt-[7vh] bg-cover bg-center  h-[95vh] w-full">
+    Content goes here
+  </div> -->
+
+  <!-- <div class="body" >
+      <img src="assets\shubham-dhage-gC_aoAjQl2Q-unsplash.jpg" alt="">
+  </div> -->
+
+ 
+  <div class="w-full grid grid-cols-1 lg:grid-cols-7">
+    <!-- Left Section -->
+    <div class="lg:col-span-3 flex flex-col items-center lg:items-end">
+      <div class="flex justify-center lg:justify-end h-10 lg:mr-[15vh]">
+        <div class="text-3xl lg:text-[5vh] mt-5 font-bold font-mono text-[#ffa500]">
+          What we do?
+        </div>
+      </div>
+      <div class="mt-10 flex justify-center lg:justify-end">
+        <div class="h-[30vh] w-[80%] sm:w-[50vh] lg:h-[40vh]">
+          <img
+            src="/assets/Group 38.png"
+            alt="Sample Image"
+            class="h-full w-full object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Section -->
+    <div class="lg:col-span-4 flex flex-col px-5 sm:px-10 lg:pl-10 lg:pt-[7vh] bg-gray-400">
+      <div class="mt-3 w-full lg:w-[85vh] grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">01.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Quality Assurance Consulting</span>
+        </div>
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">02.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Software Development Consulting</span>
+        </div>
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">03.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Regulatory Affair Consulting</span>
+        </div>
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">04.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Finance Affair Consulting</span>
+        </div>
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">05.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Auditing and Gap Assessments</span>
+        </div>
+        <div class="flex flex-row gap-4 lg:gap-8">
+          <span class="text-3xl sm:text-5xl text-white">06.</span>
+          <span class="font-extralight sm:text-xl mt-2 sm:mt-0">Quality Assurance Consulting</span>
+        </div>
+      </div>
+      <div class="my-3 lg:mt-[5vh]">
+        <a href="#" class="text-white hover:underline">Learn More </a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+  <div class="w-full h-auto flex justify-center items-center bg-gray-900">
+    <iframe 
+      class="w-full h-auto max-w-4xl aspect-video my-10" 
+      src="https://www.youtube.com/embed/-psusaPKLg0" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media; fullscreen" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+
+
+  <div class="w-full grid grid-cols-1 lg:grid-cols-7">
+    <!-- Left Section -->
+    <div class="lg:col-span-3 flex flex-col px-5 lg:pl-10 pt-10 bg-gray-400">
+      <div class="flex justify-center lg:justify-start h-10 lg:ml-[10vh] mb-[5vh]">
+        <div class="text-3xl lg:text-[5vh] font-bold font-mono text-white">
+          How we do it?
+        </div>
+      </div>
+      <span class="text-lg font-bold block lg:ml-[10vh]">
+        We Improve Business Model
+      </span>
+      <span class="my-3 text-[1.7vh] sm:w-[50vh] sm:text-lg  font-extralight text-justify block lg:ml-[10vh] lg:mr-5">
+        We specialize in refining and optimizing business models to drive
+        sustainable growth. Our innovative solutions are tailored to meet your
+        unique challenges and unlock new opportunities. Let us help you transform
+        your vision into measurable success.
+      </span>
+    </div>
+  
+    <!-- Right Section -->
+    <div class="lg:col-span-4 flex flex-row justify-center">
+      <div class="h-[30vh] w-[80%] sm:w-[70vh] lg:h-[47vh]">
+        <img
+          src="assets/jason-goodman-bzqU01v-G54-unsplash-removebg-preview.png"
+          alt="Sample Image"
+          class="h-full w-full object-contain"
+        />
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <!-- Section 1: About -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">About Us</h4>
+        <p class="text-sm">
+          We provide top-notch consultancy services tailored to help your business grow.
+        </p>
+      </div>
+      
+      <!-- Section 2: Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul>
+          <li><a href="/" class="text-sm hover:underline">Home</a></li>
+          <li><a href="/services" class="text-sm hover:underline">Services</a></li>
+          <li><a href="/projects" class="text-sm hover:underline">Projects</a></li>
+          <li><a href="/contact" class="text-sm hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Section 3: Contact -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+        <p class="text-sm">Email: contact</p>
+        <p class="text-sm">Phone: +123-456-7890</p>
+        <div class="flex space-x-4 mt-4">
+          <!-- Social Icons -->
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+      <p class="text-sm">&copy; 2024 Firm Name. All rights reserved.</p>
+    </div> -->
+  </div>
+</footer>
+
+
+
+  <div class=" border-t flex items-end w-full">
+    <footer class="w-full text-black bg-white body-font">
+      <div class=" bg-gray-900">
+        <div class="container px-5 py-4 mx-auto">
+          <p class="text-xs text-white capitalize text-center">
+            &copy; Copyright 2025 The Business Analyst. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
