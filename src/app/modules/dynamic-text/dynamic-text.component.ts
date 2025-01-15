@@ -3,14 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-dynamic-text',
   templateUrl: './dynamic-text.component.html',
-  styles: [
-  ],
+  styleUrls: ['./dynamic-text.component.css'],
 })
 export class DynamicTextComponent implements OnInit {
   phrases = [
-    "Innovative Solution",
-    "Cutting-Edge Ideas",
-    "Strategic Insights",
+    "Automation",
+    "Innovative Ideas",
+    
   ];
 
 

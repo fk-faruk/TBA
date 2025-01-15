@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { OnInit } from '@angular/core';
+// import { NavbarComponent } from 'src/app/layout/navbar/navbar.component';
 
 @Component({
   selector: 'app-body',
@@ -7,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
-  ubaLogo: string = '/assets/uba-logo.png'
 
   @Input() collapsed = false;
   @Input() screenWidth = 0;
@@ -27,6 +28,11 @@ export class BodyComponent {
 
 
 
+  routeTo( route : string) {
+      this.router.navigate(['/', route])
+  }
+
+
   getBodyClass(): string {
     let styleClass = '';
     if(this.collapsed && this.screenWidth > 768) {
@@ -37,3 +43,4 @@ export class BodyComponent {
     return styleClass;
   }
 }
+

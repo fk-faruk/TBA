@@ -8,6 +8,14 @@ import { ProjectsComponent } from './modules/projects/projects.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { AboutComponent } from './modules/about/about.component';
 import { DynamicTextComponent } from './modules/dynamic-text/dynamic-text.component';
+import { ServicesComponent } from './modules/services/services.component';
+import { DocumentsComponent } from './modules/components/documents/documents.component';
+import { LinksComponent } from './modules/components/links/links.component';
+import { ImagesComponent } from './modules/components/images/images.component';
+import { VideosComponent } from './modules/components/videos/videos.component';
+import { WebsitesComponent } from './modules/components/websites/websites.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +24,15 @@ import { DynamicTextComponent } from './modules/dynamic-text/dynamic-text.compon
  ProjectsComponent,
  ContactComponent,
  AboutComponent,
- DynamicTextComponent
+ DynamicTextComponent,
+ ServicesComponent,
+ DocumentsComponent,
+ LinksComponent,
+ ImagesComponent,
+ VideosComponent,
+ WebsitesComponent,
+ NavbarComponent,
+ FooterComponent,
   ],
   imports: [
     BrowserModule,
