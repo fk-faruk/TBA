@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './modules/projects/projects.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { AboutComponent } from './modules/about/about.component';
-import { DynamicTextComponent } from './modules/dynamic-text/dynamic-text.component';
 import { ServicesComponent } from './modules/services/services.component';
 import { DocumentsComponent } from './modules/components/documents/documents.component';
 import { LinksComponent } from './modules/components/links/links.component';
@@ -24,7 +23,6 @@ import { FooterComponent } from './layout/footer/footer.component';
  ProjectsComponent,
  ContactComponent,
  AboutComponent,
- DynamicTextComponent,
  ServicesComponent,
  DocumentsComponent,
  LinksComponent,
