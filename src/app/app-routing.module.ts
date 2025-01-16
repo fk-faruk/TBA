@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'homepage', component: BodyComponent},
   {path: 'about-us', component: AboutComponent},
   {path: 'services', component: ServicesComponent},
-  {path: 'projects', component: ProjectsComponent},
+  {path: 'client_project_page', component: ProjectsComponent},
   {path: 'contacts', component: ContactComponent},
   {path: 'documents', component: DocumentsComponent},
   {path: 'videos', component: VideosComponent},

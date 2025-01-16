@@ -24,15 +24,16 @@ export class WebsitesComponent {
       link : "https://www.empaxis.com/blog/rpa-roadmap "
     },
     {
-      webname : 'Customer satisfaction through automation',
-      description : " The website underlines how automation improves customer experience by streamlining processes, reducing response times, and improving service quality. It also looks at tools and techniques companies might employ to provide quicker, more customized encounters.",
-      link : "https://reputation.com/resources/articles/how-automation-improves-the-customer-experience/"
-    },
-    {
       webname : 'Ethics of Automation',
       description : "The website provides solutions including upgrading their skills and compliance in response to ethical issues regarding data privacy that automation presents.",
       link : "https://www.b2eautomation.com/insights/ethics-of-automation-and-robotics-top-challenges-and-solutions "
     },
+    {
+      webname : 'Customer satisfaction through automation',
+      description : " The website underlines how automation improves customer experience by streamlining processes, reducing response times, and improving service quality. It also looks at tools and techniques companies might employ to provide quicker, more customized encounters.",
+      link : "https://reputation.com/resources/articles/how-automation-improves-the-customer-experience/"
+    },
+  
     {
       webname : 'Automation Case Study',
       description : "The case study on Eurobank's automation path on the website shows how RPA, by automating repetitive tasks, enhanced operational efficiency It covers the implementation process, advantages gained, and main lessons discovered.",
