@@ -20,17 +20,17 @@ export class VideosComponent {
     {
       name : 'Kotter’s 8-Step Change Model',
       description : "The video addresses Kotter's 8-Step Change Model, which, by generating urgency, developing leadership teams, and integrating changes into the culture, helps organizations manage successful transformations. These actions aim to ensure alignment with organizational goals and sustainable impact. ",
-      link : " https://www.youtube.com/embed/1QWiMkXyTP4"
+      link : "https://www.youtube.com/embed/1QWiMkXyTP4"
     },
     {
       name  : 'Real-world use cases of RPA in the finance industry',
       description : " The video explores how the finance sector uses Robotic Process Automation (RPA) to simplify processes, therefore enhancing accuracy and efficiency. It highlights the advantages in customer service and the cost-saving power of automation. ",
-      link : " https://www.youtube.com/embed/EPgvZFiSvYk "
+      link : "https://www.youtube.com/embed/EPgvZFiSvYk"
     },
     {
       name  : '10 strategies to Manage Resistance to Change',
       description : " Emphasizing good communication, involving staff, and handling concerns, the video lists ten techniques for handling opposition to change. To reduce resistance, it emphasizes the need for leadership support and encouragement of teamwork.",
-      link : "https://www.youtube.com/embed/niU1ZYcmigM "
+      link : "https://www.youtube.com/embed/niU1ZYcmigM"
     },
     {
       name  : 'Measuring Automation ROI',
@@ -41,7 +41,7 @@ export class VideosComponent {
     {
       name  : "Robotic Process Automation (RPA)",
       description : "Robotic Process Automation (RPA), its capacity to automate repetitive processes, and how it improves productivity in businesses by lowering manual work, all of which the video addresses It emphasizes important advantages including better accuracy, financial savings, and industry-wide scaling possibility.",
-      link : "https://www.youtube.com/embed/6S1etS5cLYI "
+      link : "https://www.youtube.com/embed/6S1etS5cLYI"
     }
 
   ]

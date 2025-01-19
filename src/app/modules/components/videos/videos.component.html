@@ -29,9 +29,12 @@
             {{ videos.name }}
           </h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {{ videos.description }}
-        </p>
+        <div class=" grid place-items-center ">
+          <span class="mb-3 font-normal text-gray-700 dark:text-gray-400 w-full text-justify ">
+            {{ videos.description }}
+          </span>
+        </div>
+      
         <a
          [href]="videos.link" target="_blank"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray bg-transparent border border-red-300 text-red-400 rounded-lg hover:bg-[#fa7c7c] hover:text-white focus:ring-4 focus:outline-none "
