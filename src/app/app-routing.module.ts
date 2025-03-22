@@ -9,6 +9,7 @@ import { DocumentsComponent } from './modules/components/documents/documents.com
 import { VideosComponent } from './modules/components/videos/videos.component';
 import { ImagesComponent } from './modules/components/images/images.component';
 import { WebsitesComponent } from './modules/components/websites/websites.component';
+import { IcpPageComponent } from './modules/icp-page/icp-page.component';
 // import { LinksComponent } from './modules/components/links/links.component';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'videos', component: VideosComponent},
   {path: 'images', component: ImagesComponent},
   {path: 'websites', component: WebsitesComponent},
+  {path: 'icp_page', component: IcpPageComponent}
   // {path: 'links', component: LinksComponent}
 ];
 

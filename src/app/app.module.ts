@@ -15,6 +15,7 @@ import { VideosComponent } from './modules/components/videos/videos.component';
 import { WebsitesComponent } from './modules/components/websites/websites.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { IcpPageComponent } from './modules/icp-page/icp-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FooterComponent } from './layout/footer/footer.component';
  WebsitesComponent,
  NavbarComponent,
  FooterComponent,
+ IcpPageComponent,
   ],
   imports: [
     BrowserModule,
