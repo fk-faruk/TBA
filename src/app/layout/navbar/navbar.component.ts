@@ -16,6 +16,8 @@ export class NavbarComponent {
 
   menu : string = ''
 
+  isActive = false;
+
   constructor(private router: Router) {}
 
 
@@ -30,6 +32,7 @@ export class NavbarComponent {
 
   routeTo( route : string) {
       this.router.navigate(['/', route])
+      this.isActive = !this.isActive;
   }
 
 
