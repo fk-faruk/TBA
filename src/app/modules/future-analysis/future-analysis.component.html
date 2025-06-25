@@ -1005,12 +1005,15 @@ This second chart illustrates the average number of incidents for each day of th
     
         <div class="bg-white rounded-lg shadow-sm border">
           <div class="p-8">
-            <div class="space-y-4 text-sm">
-              <div *ngFor="let reference of references; let i = index" class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                        <div class="space-y-4 text-sm">
+              <div *ngFor="let reference of references; let i = index" class="flex flex-wrap gap-4 p-4 bg-gray-50 rounded-lg">
                 <span class="text-blue-600 font-medium min-w-[2rem]">[{{ i + 1 }}]</span>
-                <span class="text-gray-700">{{ reference }}</span>
+                <span class="text-gray-700 flex-1 break-words overflow-hidden text-ellipsis">
+            {{ reference }}
+          </span>
               </div>
             </div>
+
           </div>
         </div>
       </section>
