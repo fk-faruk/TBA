@@ -16,6 +16,7 @@ import { WebsitesComponent } from './modules/components/websites/websites.compon
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { IcpPageComponent } from './modules/icp-page/icp-page.component';
+import { FutureAnalysisComponent } from './modules/future-analysis/future-analysis.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,8 @@ import { IcpPageComponent } from './modules/icp-page/icp-page.component';
  NavbarComponent,
  FooterComponent,
  IcpPageComponent,
+ FutureAnalysisComponent
+ 
   ],
   imports: [
     BrowserModule,

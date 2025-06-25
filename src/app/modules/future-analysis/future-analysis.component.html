@@ -1,0 +1,570 @@
+<div class=" " [ngClass]="getBodyClass()">
+  <app-navbar />
+
+  <div class="mt-16">
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Future State Analysis</h1>
+        <h2 class="text-xl md:text-2xl font-light mb-8 opacity-90">
+          Criminal and Anti-Social Use of E-Mobility in the UK
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <span class="bg-white/20 text-white border border-white/30 px-3 py-1 rounded-full flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            2024 Analysis
+          </span>
+          <span class="bg-white/20 text-white border border-white/30 px-3 py-1 rounded-full flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            NPCC Report
+          </span>
+          <span class="bg-white/20 text-white border border-white/30 px-3 py-1 rounded-full flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+            Predictive Analysis
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    <!-- Introduction -->
+    <section id="introduction" class="scroll-mt-20">
+      <div class="bg-white rounded-lg shadow-sm border border-l-4 border-l-blue-600">
+        <div class="p-6 border-b border-gray-200">
+          <h2 class="text-2xl font-bold flex items-center gap-3">1. Introduction</h2>
+        </div>
+        <div class="p-8">
+          <p class="text-base text-gray-700 leading-7 mb-6">
+            The National Police Chiefs' Council (NPCC) coordinates policing strategies across the UK to ensure effective crime prevention and public safety. NPCC has expressed concerns on the increasing crime rate of e-mobility (electric bike, electric scooter, and electric motorcycle) in the UK. The initial current state analysis conducted revealed the systemic challenges of NPCC, which include:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <div class="text-center p-6 bg-blue-50 rounded-lg">
+              <svg class="h-12 w-12 text-blue-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+              <p class="text-sm text-gray-600">Increasing surge of e-mobility crimes across UK.</p>
+            </div>
+            <div class="text-center p-6 bg-amber-50 rounded-lg">
+              <svg class="h-12 w-12 text-amber-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <p class="text-sm text-gray-600">Unavailability of a centralized Database</p>
+            </div>
+            <div class="text-center p-6 bg-green-50 rounded-lg">
+              <svg class="h-12 w-12 text-green-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+              <p class="text-sm text-gray-600">Unstandardized and inconsistent reporting of e-mobility crimes across the whole police force.</p>
+            </div>
+            <div class="text-center p-6 bg-red-50 rounded-lg">
+              <svg class="h-12 w-12 text-red-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+              </svg>
+              <p class="text-sm text-gray-600">Illegal purchase of e-mobiles from the grey market</p>
+            </div>
+          </div>
+          <p class="text-base text-gray-700 leading-7 mt-7">
+            Additionally, the analysis of e-mobility crime between 2021 and 2023
+            across major cities revealed the trends of the offences, the crime
+            hotspots, and the most used e-mobility devices. This future state
+            design aims to present a strategic, data-driven approach that aligns
+            with national policing goals, leverages digital and location-based
+            tools to reduce crime, and ultimately enhances public safety. In
+            response to the current challenges, the proposed future state
+            outlines a comprehensive plan that includes increasing public
+            awareness on the lawful use of e-mobility devices, expanding police
+            patrols during high-risk periods, and delivering consistent training
+            for officers to standardize reporting procedures. It also advocates
+            for implementing an integrated, real-time crime reporting platform
+            and introducing clear legal frameworks. Together, these measures are
+            intended to strengthen collaboration between the public and police,
+            improve the quality of reported data, and ensure greater
+            accountability from users, retailers, and manufacturers within the
+            e-mobility sector.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Section-1" class="scroll-mt-20">
+      <div class="bg-white rounded-lg shadow-sm border border-l-4 border-l-blue-600">
+        <div class="p-6 border-b border-gray-200">
+          <h2 class="text-2xl font-bold flex items-center gap-3">2. Design of the Future State</h2>
+
+          <div id="solutions" class="scroll-mt-20">
+            <div class="my-5">
+              <h2 class="text-xl font-bold text-gray-900 mb-4">a. Proposed Solutions</h2>
+              <p class="text-base text-gray-600 max-w-4xl">
+                The proposed strategic e-mobility crime prevention system
+                comprises:
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                *ngFor="let solution of solutions"
+                class="bg-white rounded-lg shadow-sm border hover:shadow-lg transition-shadow p-6"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
+                      <svg
+                        class="h-8 w-8"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          *ngIf="solution.icon === 'database'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"
+                        ></path>
+                        <path
+                          *ngIf="solution.icon === 'users'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a4 4 0 11-8 0 4 4 0 018 0z"
+                        ></path>
+                        <path
+                          *ngIf="solution.icon === 'shield'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                        ></path>
+                        <path
+                          *ngIf="solution.icon === 'file-text'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                        <path
+                          *ngIf="solution.icon === 'trending-up'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                        ></path>
+                        <path
+                          *ngIf="solution.icon === 'check-circle'"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold">
+                      {{ solution.title }}
+                    </h3>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600">{{ solution.description }}</p>
+              </div>
+            </div>
+
+            <!-- New Subsection: Data-Driven Decision Making -->
+            <section id="data" class="scroll-mt-20">
+              <div class="my-10">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">
+                  b. Data-Driven Decision Making
+                </h2>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm border">
+                <!-- Tab Navigation -->
+                <div class="border-b border-gray-200">
+                  <nav class="flex justify-between px-6" aria-label="Tabs">
+                    <button
+                      *ngFor="let tab of tabs; let i = index"
+                      (click)="activeTab = i"
+                      class="flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm transition-colors"
+                      [ngClass]="{
+                        'border-blue-500 text-blue-600 bg-blue-50':
+                          activeTab === i,
+                        'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300':
+                          activeTab !== i
+                      }"
+                    >
+                      {{ tab }}
+                    </button>
+                  </nav>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="p-6">
+                  <!-- Correlation Analysis -->
+                  <div *ngIf="activeTab === 0">
+                    <h3 class="text-lg font-semibold mb-2">
+                      Correlation Factors
+                    </h3>
+                    <div class="space-y-4">
+                      <div class="mt-10">
+                        <div class="text-center mb-6">
+                          <img
+                            src="assets/images/chart1.png"
+                            alt="Correlation Chart"
+                            class="mx-auto rounded-lg shadow-md max-w-full h-auto md:h-[70vh]"
+                          />
+                        </div>
+                        <p class="text-sm text-gray-700 leading-7">
+                          This chart illustrates the interconnections among
+                          various data elements related to e-mobility crimes,
+                          such as location, time, and reporting delays. Location
+                          data exhibits high reliability, with robust
+                          correlations among different location recording
+                          methods, validating the crime map and hotspot
+                          analysis. Report delays lack discernible patterns,
+                          indicating no significant relationship with crime
+                          location or timing, suggesting influences related to
+                          victim behavior or crime type. The relationship
+                          between quarters and years shows a mild negative
+                          correlation, potentially attributed to data coding
+                          anomalies.
+                        </p>
+                        <p class="text-sm text-gray-700 leading-7 mt-4">
+                          <strong>Summary:</strong> The coordinate data allows
+                          for reliable mapping and clustering of e-bike,
+                          e-scooter, and e-motorcycle crimes. However, reporting
+                          delays cannot be solely interpreted through temporal
+                          or spatial analysis; additional variables such as
+                          offence type and demographics must be considered.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Trend Analysis -->
+                  <div *ngIf="activeTab === 1">
+                    <h3 class="text-lg font-semibold mb-2">Trend Analysis</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div class="flex items-center justify-center bg-gray-100 rounded-lg shadow-md p-4">
+                        <img
+                          src="assets/images/chart2.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto"
+                        />
+                      </div>
+                      <div class="flex items-center justify-center bg-gray-100 rounded-lg shadow-md p-4">
+                        <img
+                          src="assets/images/chart3.png"
+                          alt="Trend Analysis Chart 2"
+                          class="rounded-lg max-w-full h-auto"
+                        />
+                      </div>
+                    </div>
+                    <p class="my-2 text-base text-gray-700 ">
+                      This chart provides an overview of e-mobility-related
+                      crime data. It shows a total of 7,369 offenses, with 3,855
+                      open cases and an average reporting delay of 8 days. The
+                      top force for these crimes is Avon and Somerset, where
+                      theft is the most common offense, accounting for 19 forces
+                      and representing 12.92% of unknown cases by force. The
+                      chart shows 7,369 e-mobility crimes, mostly involving
+                      theft of E-scooters and E-bikes. Crime peaks around
+                      mid-year and declines by December, with Avon and Somerset
+                      being the top force addressing these offenses E-scooters
+                      account for 50.88% of e-mobility offences, followed
+                      closely by e-bikes.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                      <!-- First Image Container -->
+                      <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                        <div class="flex items-center justify-center">
+                          <img
+                            src="assets/images/chart4.png"
+                            alt="Trend Analysis Chart 1"
+                            class="rounded-lg max-w-full h-auto"
+                          />
+                        </div>
+                        <p class="text-sm">
+                          E-mobility crime was increasingly high in 2022 and had
+                          a sharp decline in 2023
+                        </p>
+                      </div>
+                      <!-- Second Image Container -->
+                      <div class="bg-gray-100 rounded-lg shadow-md p-4">
+                        <div class="flex items-center justify-center">
+                          <img
+                            src="assets/images/chart5.png"
+                            alt="Trend Analysis Chart 2"
+                            class="rounded-lg max-w-full h-auto"
+                          />
+                        </div>
+                        <p class="text-sm">
+                          The chart shows crimes steadily increased from 2021
+                          Q1, peaking in 2022 Q3 with over 1,000 incidents.
+                          After this, crime numbers gradually declined, with a
+                          sharp decline in 2023 Q4, falling to just 20 cases.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                        <div
+                        class="flex my-3 items-center justify-center bg-gray-100 rounded-lg shadow-md p-4"
+                      >
+                        <img
+                          src="assets/images/chart6.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto"
+                        />
+                      </div>
+
+                      <p class=" text-base text-gray-700 ">
+                        The first chart indicates that the majority of suspects involved in incidents (from the incident details) are male, accounting for 87.98%, while 12.02% are unknown.
+This second chart illustrates the average number of incidents for each day of the week. The data shows that Tuesday and Wednesday tend to have the highest number of incidents, each reaching around 1115 to 1113. Conversely, Sunday has the lowest number of incidents, with just 888. The pattern suggests that incidents are generally more frequent on weekdays, especially Tuesdays and Wednesdays, while weekends, particularly Sunday, tend to experience fewer incidents.
+
+                      </p>
+                    </div>
+
+                    <div
+                    class="flex flex-col my-3 gap-3 items-center  bg-gray-100 rounded-lg shadow-md p-4"
+                  >
+                    <img
+                      src="assets/images/chart7.png"
+                      alt="Trend Analysis Chart 1"
+                      class="rounded-lg max-w-full h-auto"
+                    />
+                    <div>
+                        <p class="my-2 text-sm text-gray-700 ">
+                            This chart explains that E-mobility theft is the most common offence type based on the high-level categorisation of offence. Also, the unclassified event ranked high due to undetailed incident reporting by the force.
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-5">
+                    <h3 class="text-md font-bold text-gray-900 mb-4">Unclassified Offences by Force and City (2021-2023, e-bike/e-scooter/e-motorcycle):</h3>
+                    <div class="overflow-x-auto">
+                      <table class="table-auto w-full border-collapse border border-gray-300 text-left text-sm">
+                        <thead class="bg-gray-100">
+                          <tr>
+                            <th class="border border-gray-300 px-4 py-2">S/N</th>
+                            <th class="border border-gray-300 px-4 py-2">Force</th>
+                            <th class="border border-gray-300 px-4 py-2">City</th>
+                            <th class="border border-gray-300 px-4 py-2">Count of Unclassified Offence</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td class="border border-gray-300 px-4 py-2">1</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Leeds</td><td class="border border-gray-300 px-4 py-2">84</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">2</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Bradford</td><td class="border border-gray-300 px-4 py-2">28</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">3</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td><td class="border border-gray-300 px-4 py-2">Nottingham</td><td class="border border-gray-300 px-4 py-2">22</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">4</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Kirkles</td><td class="border border-gray-300 px-4 py-2">14</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">5</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Southhampton</td><td class="border border-gray-300 px-4 py-2">12</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">6</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Wakefield</td><td class="border border-gray-300 px-4 py-2">6</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">7</td><td class="border border-gray-300 px-4 py-2">Merseyside</td><td class="border border-gray-300 px-4 py-2">Liverpool</td><td class="border border-gray-300 px-4 py-2">6</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">8</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Calderdale</td><td class="border border-gray-300 px-4 py-2">5</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">9</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Portsmouth</td><td class="border border-gray-300 px-4 py-2">5</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">10</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td><td class="border border-gray-300 px-4 py-2">Ashfield</td><td class="border border-gray-300 px-4 py-2">4</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">11</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Havant</td><td class="border border-gray-300 px-4 py-2">4</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">12</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td><td class="border border-gray-300 px-4 py-2">Bassetlaw</td><td class="border border-gray-300 px-4 py-2">2</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">13</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Basingstoke and Deane</td><td class="border border-gray-300 px-4 py-2">2</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">14</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Test Valley</td><td class="border border-gray-300 px-4 py-2">2</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">15</td><td class="border border-gray-300 px-4 py-2">North Wales</td><td class="border border-gray-300 px-4 py-2">Wrexham</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">16</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Emsworth</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">17</td><td class="border border-gray-300 px-4 py-2">North Wales</td><td class="border border-gray-300 px-4 py-2">Old Colwyn</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">18</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td><td class="border border-gray-300 px-4 py-2">Gedling</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">19</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td><td class="border border-gray-300 px-4 py-2">Mansfield Woodhouse</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">20</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Rushmoor</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">21</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Hart</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">22</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Gosport</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">23</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Fareham</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">24</td><td class="border border-gray-300 px-4 py-2">North Wales</td><td class="border border-gray-300 px-4 py-2">Rhyl</td><td class="border border-gray-300 px-4 py-2">1</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <h3 class="text-md font-bold text-gray-900 mt-10 mb-4">Top 5 Cities, County, Offence, and Force:</h3>
+                    <div class="overflow-x-auto">
+                      <table class="table-auto w-full border-collapse border border-gray-300 text-left text-sm">
+                        <thead class="bg-gray-100">
+                          <tr>
+                            <th class="border border-gray-300 px-4 py-2">City</th>
+                            <th class="border border-gray-300 px-4 py-2">County</th>
+                            <th class="border border-gray-300 px-4 py-2">Top HO Offence</th>
+                            <th class="border border-gray-300 px-4 py-2">Force</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td class="border border-gray-300 px-4 py-2">Nottingham</td><td class="border border-gray-300 px-4 py-2">East Midlands</td><td class="border border-gray-300 px-4 py-2">Theft</td><td class="border border-gray-300 px-4 py-2">Nottinghamshire</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">Leeds</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td><td class="border border-gray-300 px-4 py-2">Unclassified</td><td class="border border-gray-300 px-4 py-2">West Yorkshire</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">Liverpool</td><td class="border border-gray-300 px-4 py-2">Liverpool City Region</td><td class="border border-gray-300 px-4 py-2">Public Order</td><td class="border border-gray-300 px-4 py-2">Merseyside</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">Portsmouth</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Theft</td><td class="border border-gray-300 px-4 py-2">Hampshire</td></tr>
+                          <tr><td class="border border-gray-300 px-4 py-2">Southampton</td><td class="border border-gray-300 px-4 py-2">Hampshire</td><td class="border border-gray-300 px-4 py-2">Theft</td><td class="border border-gray-300 px-4 py-2">Hampshire</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class=" bg-gray-100 rounded-lg shadow-md p-">
+                  <div
+                  class="flex my-3 justify-center  items-center 4"
+                >
+                  <img
+                    src="assets/images/chart8.png"
+                    alt="Trend Analysis Chart 1"
+                    
+                    class="rounded-lg pt-2 max-w-full h-auto"
+                  />
+                
+                </div>
+                <div>
+                    <p class="my-2 text-sm text-gray-700 ">
+                      Incident Delay (Days between Committed and Reported): Majority of crime cases were reported shortly after committed. The distribution of delayed reports is concentrated around zero days, with a few negative trends.                      </p>
+                </div>
+            </div>
+                  </div>
+
+                  <!-- Key Insights -->
+                  <div *ngIf="activeTab === 2">
+                    <div class="grid  gap-6">
+                        
+                        <div
+                        class="flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-md p-4"
+                      >
+                        <img
+                          src="assets/images/chart9.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto md:h-72"
+                        />
+
+
+                        <p class="my-2 text-sm text-gray-700 ">
+                            This chart shows crime peaks at around 12:00 AM, 9:00 AM, 6:00 PM, and 9:00 PM. Crime occurs at midnight and morning and in the evening, with fewer incidents early in the morning. These times could be key focus points for safety efforts.
+                        </p>
+                      </div>
+                   
+                    </div>
+
+                    <div class="grid  gap-6">
+                        
+                        <div
+                        class="flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-md p-4"
+                      >
+                        <img
+                          src="assets/images/chart10.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto md:h-72"
+                        />
+
+
+                        <p class="my-2 text-sm text-gray-700 ">
+                            This chart indicates distinct peaks at midnight (0:00) across all days, with Monday being the most intense. A secondary daily peak occurs around 9:00 and 21:00, likely coinciding with:  Morning activity (commutes, public interactions) Evening incidents, possibly related to nightlife or social behaviour. Crime consistently registers lowest between 3:00–6:00 AM, aligning with general inactivity hours                        </p>
+                      </div>
+                   
+                    </div>
+
+                    <div>
+                        <div
+                        class="flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-md p-4"
+                      >
+                        <img
+                          src="assets/images/chart11.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto md:h-72"
+                        />
+                        </div>
+
+                        <div
+                        class="flex flex-col items-center justify-center bg-gray-100 rounded-lg shadow-md p-4"
+                      >
+                        <img
+                          src="assets/images/chart12.png"
+                          alt="Trend Analysis Chart 1"
+                          class="rounded-lg max-w-full h-auto md:h-72"
+                        />
+                        </div>
+                    </div>
+
+
+                    <div class="bg-white  shadow-sm ">
+                        <!-- <div class="p-6 border-b border-gray-200">
+                          <h3 class="text-xl font-semibold flex items-center gap-2">
+                            <svg class="h-5 w-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                            </svg>
+                            Risk Management
+                          </h3>
+                        </div> -->
+                        <div class="p-6">
+                          <div class="space-y-4">
+                            <div *ngFor="let item of riskItems" class="border-l-4 border-l-amber-400 pl-4 py-2">
+                              <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-medium text-gray-900">{{ item.risk }}</h4>
+                                <!-- <span 
+                                  class="px-2 py-1 text-xs font-medium rounded-full"
+                                  [ngClass]="{
+                                    'bg-red-100 text-red-800': item.severity === 'High',
+                                    'bg-yellow-100 text-yellow-800': item.severity === 'Medium',
+                                    'bg-gray-100 text-gray-800': item.severity === 'Low'
+                                  }"
+                                >
+                                  {{ item.severity }}
+                                </span> -->
+                              </div>
+                              <p class="text-sm text-gray-600">{{ item.mitigation }}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- <div class="mt-10">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">b. Data-Driven Decision Making</h3>
+              <h4 class="text-lg font-semibold text-gray-800 mb-3">I. Correlation Analysis</h4>
+              <div class="text-center mb-6">
+                <img src="assets/images/correlation-chart.png" alt="Correlation Chart" class="mx-auto rounded-lg shadow-md">
+              </div>
+              <p class="text-base text-gray-700 leading-7">
+                This chart illustrates the interconnections among various data elements related to e-mobility crimes, such as location, time, and reporting delays.
+                Location data exhibits high reliability, with robust correlations among different location recording methods, validating the crime map and hotspot analysis. Report delays lack discernible patterns, indicating no significant relationship with crime location or timing, suggesting influences related to victim behavior or crime type. The relationship between quarters and years shows a mild negative correlation, potentially attributed to data coding anomalies.
+              </p>
+              <p class="text-base text-gray-700 leading-7 mt-4">
+                <strong>Summary:</strong> The coordinate data allows for reliable mapping and clustering of e-bike, e-scooter, and e-motorcycle crimes. However, reporting delays cannot be solely interpreted through temporal or spatial analysis; additional variables such as offence type and demographics must be considered.
+              </p>
+            </div> -->
+
+  
+          </div>  
+        
+          <div class="bg-white rounded-lg shadow-sm border  mt-4">
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200">
+              <nav class="flex justify-between px-6" aria-label="Tabs">
+                <button
+                  *ngFor="let tab of tabs2; let i = index"
+                  (click)="activeTab = i"
+                  class="flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm transition-colors"
+                  [ngClass]="{
+                    'border-blue-500 text-blue-600 bg-blue-50':
+                      activeTab === i,
+                    'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300':
+                      activeTab !== i
+                  }"
+                >
+                  {{ tab }}
+                </button>
+              </nav>
+            </div>
+            </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

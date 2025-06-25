@@ -10,6 +10,7 @@ import { VideosComponent } from './modules/components/videos/videos.component';
 import { ImagesComponent } from './modules/components/images/images.component';
 import { WebsitesComponent } from './modules/components/websites/websites.component';
 import { IcpPageComponent } from './modules/icp-page/icp-page.component';
+import { FutureAnalysisComponent } from './modules/future-analysis/future-analysis.component';
 // import { LinksComponent } from './modules/components/links/links.component';
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'videos', component: VideosComponent},
   {path: 'images', component: ImagesComponent},
   {path: 'websites', component: WebsitesComponent},
-  {path: 'icp_page', component: IcpPageComponent}
+  {path: 'icp_page', component: IcpPageComponent},
+  {path: 'future_analysis', component: FutureAnalysisComponent}
   // {path: 'links', component: LinksComponent}
 ];
 
