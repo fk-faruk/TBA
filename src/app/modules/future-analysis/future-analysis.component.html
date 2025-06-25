@@ -542,29 +542,479 @@ This second chart illustrates the average number of incidents for each day of th
           </div>  
         
           <div class="bg-white rounded-lg shadow-sm border  mt-4">
-            <!-- Tab Navigation -->
+            <!-- Second Tab Navigation -->
             <div class="border-b border-gray-200">
               <nav class="flex justify-between px-6" aria-label="Tabs">
                 <button
                   *ngFor="let tab of tabs2; let i = index"
-                  (click)="activeTab = i"
+                  (click)="activeTab2 = i"
                   class="flex-1 py-4 px-1 text-center border-b-2 font-medium text-sm transition-colors"
                   [ngClass]="{
-                    'border-blue-500 text-blue-600 bg-blue-50':
-                      activeTab === i,
-                    'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300':
-                      activeTab !== i
+                    'border-blue-500 text-blue-600 bg-blue-50': activeTab2 === i,
+                    'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300': activeTab2 !== i
                   }"
                 >
                   {{ tab }}
                 </button>
               </nav>
             </div>
+
+            <!-- Second Tab Content -->
+            <div class="p-6">
+              <!-- Clustering Content -->
+              <div *ngIf="activeTab2 === 0">
+                <h3 class="text-lg font-semibold mb-2">Clustering Analysis</h3>
+                <div class="bg-gray-50 rounded-lg p-4">
+                <div class="text-center mt-6">
+                  <img src="assets/images/chart13.png" alt="Clustering Chart" class="mx-auto  shadow-md max-w-full h-auto md:h-[40vh]">
+                  <img src="assets/images/chart14.png" alt="Clustering Chart" class="mx-auto  shadow-md max-w-full h-auto md:h-[70vh]">
+                </div>
+
+                <!-- Content outside the images -->
+                <div class="mt-6  p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Findings</h4>
+                  <p class="text-sm text-gray-700 leading-7">
+                    A scatter plot was used to visualize UK cities clustered by geographic coordinates and crime hotspot data (2021–2023). Each color-coded cluster represents cities with similar spatial crime characteristics.
+                  </p>
+                  <ul class="list-disc pl-6 text-sm text-gray-700 mt-4">
+                    <li><strong>Distinct Geographic Clusters:</strong></li>
+                    <ul class="list-disc pl-6">
+                      <li><strong>Cluster 0 (NW):</strong> Densely grouped cities like Wrexham and Chester show strong regional similarity.</li>
+                      <li><strong>Cluster 1 (East):</strong> Sparse and possibly outlier cities like Mablethorpe.</li>
+                      <li><strong>Cluster 2 (Central-South):</strong> Dispersed grouping including Newport and Warminster.</li>
+                      <li><strong>Cluster 3 (SE Coast):</strong> Coastal cities such as Portsmouth and Isle of Wight.</li>
+                      <li><strong>Cluster 4 (North-Central):</strong> Close-knit cities like Wakefield and Goole.</li>
+                    </ul>
+                    <li><strong>Spatial Trends:</strong> Cities within proximity tend to share crime patterns, likely due to overlapping socio-economic or infrastructural conditions.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
+              <!-- Geospatial Analysis Content -->
+              <div *ngIf="activeTab2 === 1">
+                <h3 class="text-lg font-semibold mb-2">Geospatial Analysis</h3>
+                <div class="text-center mt-6">
+                  <img src="assets/images/chart15.png" alt="Geospatial Chart" class="mx-auto rounded-lg shadow-md max-w-full h-auto">
+                </div>
+
+                <!-- Content outside the image -->
+                <div class="mt-6 bg-gray-50 rounded-lg shadow-md p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Findings</h4>
+                  <p class="text-sm text-gray-700 leading-7">
+                    E-mobility crime is heavily concentrated in urban centers, particularly in the West and East Midlands, with high-density clusters around Birmingham, Wolverhampton, Derby, Nottingham, and Leicester. Interactive mapping shows:
+                  </p>
+                  <ul class="list-disc pl-6 text-sm text-gray-700 mt-4">
+                    <li><strong>Leicester:</strong> A key hotspot, especially in areas like Newfoundpool, Belgrave, and Braunstone, which align with high-traffic zones and urban amenities.</li>
+                    <li><strong>Broader Urban Coverage:</strong> Extends to Manchester, Sheffield, and Liverpool, although with lower density.</li>
+                    <li><strong>Suburban Zones:</strong> Moderate activity near major transport routes (e.g., Wigston, Syston, A50, A47, M69, M1, M62).</li>
+                    <li><strong>Rural Areas:</strong> Few incidents reported, likely due to low usage or underreporting.</li>
+                  </ul>
+                  <p class="text-sm text-gray-700 leading-7 mt-4">
+                    <strong>Key Insight:</strong> Crime density correlates strongly with population and mobility infrastructure. These findings justify targeted interventions such as patrol concentration, lighting upgrades, and community education in high-risk areas.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Predictive Analysis Content -->
+              <div *ngIf="activeTab2 === 2">
+                <h3 class="text-lg font-semibold mb-2">Predictive Analysis</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                  <img src="assets/images/chart16.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                  <img src="assets/images/chart17.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                  <img src="assets/images/chart18.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                  <img src="assets/images/chart19.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                  <img src="assets/images/chart20.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                  <img src="assets/images/chart21.png" alt="Predictive Chart" class="rounded-lg shadow-md max-w-full h-auto">
+                </div>
+
+                <!-- Content outside the images -->
+                <div class="mt-6 bg-gray-50 rounded-lg shadow-md p-6">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Findings</h4>
+                  <p class="text-sm text-gray-700 leading-7">
+                    These charts displayed above predict crime trends related to E-Bikes, E-Scooters, and E-Motorcycles across several UK cities from 2021 to 2026. Each city has its graph, showing how crime levels are expected to change over time.
+                  </p>
+                  <p class="text-sm text-gray-700 leading-7 mt-4">
+                    Hampshire's crime rates remained high and stable until early 2023 but are expected to decline significantly starting in 2024, though uncertainty grows over time. Nottingham displays a variable crime pattern, with fluctuations suggesting a slight increase towards the end of the forecast period, accompanied by less confidence in later predictions.
+                  </p>
+                  <p class="text-sm text-gray-700 leading-7 mt-4">
+                    In Liverpool, crime data indicates low and unpredictable levels, with predictions hinting at a gradual rise, albeit with some uncertainty. West Yorkshire sees an upward trend in predicted crimes until 2023, followed by a dip in 2024, then a resurgence by 2026, accompanied by considerable uncertainty.
+                  </p>
+                  <p class="text-sm text-gray-700 leading-7 mt-4">
+                    Merseyside's overall trend suggests a steady increase in crimes from 2021 to 2026, with fluctuations and uncertainty highlighted in the forecasts.
+                  </p>
+                  <p class="text-sm text-gray-700 leading-7 mt-4">
+                    <strong>Summary:</strong> Most cities are projected to see fluctuations in crimes related to e-vehicles over the next few years. While some, like Hampshire, show a hopeful decline, others, like West Yorkshire and Merseyside, indicate a potential rise. The shaded regions across all charts highlight that as forecasts extend further, there's more uncertainty, and actual crime levels might differ from these predictions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
         </div>
       </div>
     </section>
+
+    <div class="mt-10 bg-white rounded-lg shadow-sm border border-l-4 border-l-blue-600 p-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">SLR on the Proposed Solution</h2>
+
+      <!-- Section I -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">I. Smart Crime Reporting Platforms</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Smartphone and web-based crime reporting tools with real-time geolocation are increasingly utilized in UK policing. Zhang, Nelson, and Mulley (2024) demonstrate that location-enabled apps enhance public engagement and data accuracy, as evidenced in e-scooter trials. Police dashboards further boost efficiency in high-incident urban areas.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Integrating public-facing apps with centralized police dashboards improves data quality, streamlines reporting, and builds user trust.
+        </p>
+      </div>
+
+      <!-- Section II -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">II. Licensing and Registration of E-Mobility Devices</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Greenwood-Reeves (2022) emphasizes that clear regulations, particularly concerning ownership and traceability, are vital for gaining public trust in e-mobility systems. In London’s shared e-scooter trials, digital registration was implemented to reduce misuse by anonymous users.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Licensing systems strengthen accountability and deter the criminal use of unregistered devices.
+        </p>
+      </div>
+
+      <!-- Section III -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">III. Training (Police and Public) and Technology Adoption</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Witzell et al. (2022) highlight that community training is essential for promoting responsible use in UK mobility innovation pilots. Schrader et al. (2024) add that officer training enhances the effective use of digital tools and geospatial dashboards.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Educating both the public and police facilitates smoother adoption of new technologies.
+        </p>
+      </div>
+
+      <!-- Section IV -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">IV. GPS Integration and Security</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Shukla (2025) finds that built-in GPS in UK e-scooters serves a dual purpose—deterring theft and aiding in the recovery of stolen units. The research supports regulatory moves that require manufacturers to include tracking features in retail models.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Real-time GPS tracking strengthens theft prevention and enhances law enforcement response.
+        </p>
+      </div>
+
+      <!-- Section V -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">V. Retailer, Manufacturer & Distributor Regulation</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Joshi et al. (2023) identify unregulated sales channels as a primary source of inconsistent safety standards in shared mobility. Martin (2020) corroborates this by showing that retailer registration and inspections improve public safety outcomes.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Strengthening retail oversight curbs the spread of unregistered and untracked devices.
+        </p>
+      </div>
+
+      <!-- Section VI -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">VI. Geospatial Crime Monitoring and Policing Efficiency</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Martínez (2021) demonstrates that visual dashboards and IoT integration enhance real-time decision-making in public safety. UK councils are increasingly implementing these tools to improve incident response and monitor reporting effectiveness.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Geospatial dashboards enable intelligence-led policing and ongoing performance assessment of local forces.
+        </p>
+      </div>
+
+      <!-- Section VII -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">VII. Manufacturer Collaboration and Enforcement</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          Smith and Coxhead (2024) examine joint efforts between e-mobile manufacturers and UK law enforcement to standardize serial registration and enforce local safety regulations. Their study documents a pilot initiative targeting gang-related misuse of illegal e-scooters in theft and delivery crimes.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Collaboration with manufacturers strengthens enforcement and addresses loopholes in unregulated imports.
+        </p>
+      </div>
+
+      <!-- Section VIII -->
+      <div>
+        <h3 class="text-lg font-semibold text-gray-800 mb-3">VIII. Improved Lighting and CCTV Deployment</h3>
+        <p class="text-sm text-gray-700 leading-7">
+          In a UK criminological study, Baillie (2019) demonstrated that the use of CCTV systems alongside well-planned lighting significantly reduces incidents of property and vehicle-related crime. These preventative measures proved especially effective when supported by mobile surveillance units deployed along busy e-mobility routes.
+        </p>
+        <p class="text-sm text-gray-700 leading-7 mt-2">
+          <strong>Key Point:</strong> Integrating urban lighting and surveillance strategies helps lower crime concentrations in areas with high mobility risk.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="mt-10 bg-white rounded-lg shadow-sm border border-l-4 border-l-green-600 p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">3. Research Methods</h2>
+      
+        <!-- Mixed Method Research -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">a. Mixed Method Research</h3>
+          <p class="text-sm text-gray-700 leading-7 mb-4">
+            This study employed a mixed methods design, integrating both quantitative and qualitative analytical techniques to provide a comprehensive understanding of the research problem.
+          </p>
+          <div class="bg-gray-50 rounded-lg shadow-md p-4 mb-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">Data Acquisition</h4>
+            <p class="text-sm text-gray-700 leading-7">
+              The dataset was provided by the client, the National Police Chiefs' Council (NPCC), and shared via the University of Hertfordshire’s institutional email.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg shadow-md p-4 mb-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">Quantitative Analysis</h4>
+            <p class="text-sm text-gray-700 leading-7 mb-4">
+              The quantitative component focused on crime data analysis using various computational and statistical tools, including Microsoft Excel, Power BI, Power Query, DAX, and Python. The following methods were applied:
+            </p>
+            <ul class="list-disc pl-6 text-sm text-gray-700">
+              <li>Trend Analysis</li>
+              <li>Geospatial Analysis</li>
+              <li>Clustering Techniques</li>
+              <li>Time Series Analysis and Heatmap Visualisations</li>
+              <li>Systematic Literature Review (SLR)</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-lg shadow-md p-4">
+            <h4 class="text-lg font-semibold text-gray-800 mb-3">Qualitative Analysis</h4>
+            <p class="text-sm text-gray-700 leading-7">
+              An initial interview was conducted to capture insights and establish a baseline for the current state analysis. This helped contextualize quantitative findings and refine the research focus.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Futureproofing Strategies -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">b. Futureproofing Strategies</h3>
+          <ul class="list-disc pl-6 text-sm text-gray-700 space-y-2">
+            <li><strong>Innovative Application Design:</strong> Utilizes modular APIs for scalability across the UK forces.</li>
+            <li><strong>Data Protection Compliance:</strong> Adheres to GDPR with encryption and anonymized storage.</li>
+            <li><strong>Expandable Licensing Framework:</strong> Compatible with Driver and Vehicle Agency (DVLA) and future smart vehicle databases.</li>
+            <li><strong>Instant Analytics:</strong> Dashboard enhances decision-making with AI alerts.</li>
+            <li><strong>Open Source GPS Protocols:</strong> Mitigate vendor lock-in and lower costs.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-10 bg-white rounded-lg shadow-sm border border-l-4 border-l-yellow-600 p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">4. Feasibility and Implementation Plan</h2>
+      
+        <!-- Feasibility Assessment -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">a. Feasibility Assessment</h3>
+          <p class="text-sm text-gray-700 leading-7 mb-4">
+            The proposed solution seeks to improve e-mobility by integrating scalable infrastructure, cross-platform design, adaptable policy logic, and GPS validation. Key priorities encompass user-friendly interfaces, GDPR compliance, and sustainability through public-private collaboration. This will cultivate trust and innovation in the evolving e-mobility landscape.
+          </p>
+          <div class="bg-gray-50 rounded-lg shadow-md p-4">
+            <ul class="list-disc pl-6 text-sm text-gray-700 space-y-2">
+              <li><strong>App Infrastructure:</strong> Achievable via AWS or Azure; accessible on current force devices.</li>
+              <li><strong>Licensing:</strong> Enforceable through current DVLA collaborations.</li>
+              <li><strong>Retail Oversight:</strong> Partner with trading standards and local authorities.</li>
+            </ul>
+
+            <div class="overflow-x-auto my-6">
+                <table class="table-auto w-full border-collapse border border-gray-300 text-left text-sm">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th class="border border-gray-300 px-4 py-2">Proposed Solution</th>
+                      <th class="border border-gray-300 px-4 py-2">Feasibility</th>
+                      <th class="border border-gray-300 px-4 py-2">SLR Support</th>
+                      <th class="border border-gray-300 px-4 py-2">Test Method</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Crime Reporting App</td>
+                      <td class="border border-gray-300 px-4 py-2">High</td>
+                      <td class="border border-gray-300 px-4 py-2">Aston (2022), Mahmoud (2025)</td>
+                      <td class="border border-gray-300 px-4 py-2">Percentage of detailed report growth (Time between date committed and reported)</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Law Enforcement Integration</td>
+                      <td class="border border-gray-300 px-4 py-2">Medium</td>
+                      <td class="border border-gray-300 px-4 py-2">Shane (2024)</td>
+                      <td class="border border-gray-300 px-4 py-2">Percentage drop from before the regulation to after the regulation</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Education Campaigns</td>
+                      <td class="border border-gray-300 px-4 py-2">High</td>
+                      <td class="border border-gray-300 px-4 py-2">Hansen & Aston (2022)</td>
+                      <td class="border border-gray-300 px-4 py-2">Survey before/after awareness reporting accuracy</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Manufacturer Collaboration</td>
+                      <td class="border border-gray-300 px-4 py-2">Medium</td>
+                      <td class="border border-gray-300 px-4 py-2">Shane (2024)</td>
+                      <td class="border border-gray-300 px-4 py-2">Grey import rates before vs. after</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">Retail, Manufacturer and Distributor Licensing</td>
+                      <td class="border border-gray-300 px-4 py-2">High</td>
+                      <td class="border border-gray-300 px-4 py-2">Brock (2022)</td>
+                      <td class="border border-gray-300 px-4 py-2">Percentage of traceable before and after vehicle enforcement</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-gray-300 px-4 py-2">GPS Trackers</td>
+                      <td class="border border-gray-300 px-4 py-2">High</td>
+                      <td class="border border-gray-300 px-4 py-2">Shukla (2025)</td>
+                      <td class="border border-gray-300 px-4 py-2">Theft recovery correlation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Testing & Impact Forecast</h3>
+                <p class="text-sm text-gray-700 leading-7 mb-4">
+                  A Python-based simulation estimated a 62% overall crime reduction, with the most effective components being:
+                </p>
+                <ul class="list-disc pl-6 text-sm text-gray-700 space-y-2">
+                  <li><strong>Retail Licensing:</strong> 15%</li>
+                  <li><strong>GPS Tracking:</strong> 14%</li>
+                </ul>
+              </div>
+
+
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">b. Implementation Plan</h3>
+                <div class="overflow-x-auto">
+                  <table class="table-auto w-full border-collapse border border-gray-300 text-left text-sm">
+                    <thead class="bg-gray-100">
+                      <tr>
+                        <th class="border border-gray-300 px-4 py-2">Phase</th>
+                        <th class="border border-gray-300 px-4 py-2">Activity</th>
+                        <th class="border border-gray-300 px-4 py-2">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">1</td>
+                        <td class="border border-gray-300 px-4 py-2">App Design, GPS vendor partnership, Regulatory/Law review</td>
+                        <td class="border border-gray-300 px-4 py-2">3 months</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">2</td>
+                        <td class="border border-gray-300 px-4 py-2">Application Development</td>
+                        <td class="border border-gray-300 px-4 py-2">4 months</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">3</td>
+                        <td class="border border-gray-300 px-4 py-2">System Integration Testing</td>
+                        <td class="border border-gray-300 px-4 py-2">1 month</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">4</td>
+                        <td class="border border-gray-300 px-4 py-2">Pilot rollout in 3 high-crime cities</td>
+                        <td class="border border-gray-300 px-4 py-2">6 months</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">5</td>
+                        <td class="border border-gray-300 px-4 py-2">National training & public education</td>
+                        <td class="border border-gray-300 px-4 py-2">2 months</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">6</td>
+                        <td class="border border-gray-300 px-4 py-2">Full UK launch and continuous dashboard reporting</td>
+                        <td class="border border-gray-300 px-4 py-2">Final</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">c. Risk Management</h3>
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <table class="table-auto w-full border-collapse border border-gray-300 text-left text-sm">
+                    <thead class="bg-gray-100">
+                      <tr>
+                        <th class="border border-gray-300 px-4 py-2">Risk</th>
+                        <th class="border border-gray-300 px-4 py-2">Mitigation Strategy</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">False Reporting / App Misuse</td>
+                        <td class="border border-gray-300 px-4 py-2">One-time password (OTP) authentication. NLP-based anomaly detection via classifiers.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Spoofed or Misused GPS Data</td>
+                        <td class="border border-gray-300 px-4 py-2">Anonymized GPS logging. Role-based access control.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Privacy and Data Breaches</td>
+                        <td class="border border-gray-300 px-4 py-2">Local data encryption. GDPR-compliant architecture.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Public Resistance</td>
+                        <td class="border border-gray-300 px-4 py-2">Targeted education and outreach campaigns.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Retail, Distributor, and Manufacturer Non-compliance</td>
+                        <td class="border border-gray-300 px-4 py-2">Penalties and integration with a formal registration registry.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Law Enforcement (Police) Resistance</td>
+                        <td class="border border-gray-300 px-4 py-2">Practical training workshops.</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-gray-300 px-4 py-2">Data Inconsistency</td>
+                        <td class="border border-gray-300 px-4 py-2">Enforced standardized input formats across the system.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="mt-10 bg-white rounded-lg shadow-sm border border-l-4 border-l-red-600 p-6">
+        <!-- Conclusion -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">5. Conclusion</h3>
+          <p class="text-base text-gray-700 leading-7 mb-4">
+            The proposed future state delivers:
+          </p>
+          <ul class="list-disc pl-6 text-base text-gray-700 space-y-2">
+            <li>Enhanced quality and granularity of crime reporting</li>
+            <li>Enforceable and transparent e-mobility regulations</li>
+            <li>Control over grey market distribution, fostering public trust</li>
+            <li>Strong alignment with national digital policy goals</li>
+          </ul>
+          <p class="text-base text-gray-700 leading-7 mt-4">
+            This strategy offers a scalable, data-driven framework for reducing e-mobility crime across the UK. Grounded in advanced analytics and collaboration with stakeholders, it supports a shift from reactive to proactive policing. By utilizing digital infrastructure, structured regulation, and public-private partnerships, it empowers the police to anticipate and effectively respond to urban crime trends.
+          </p>
+          <p class="text-base text-gray-700 leading-7 mt-4">
+            <strong>Ethical Considerations:</strong> All analysis activities adhered to UH ethical standards, including informed consent from interviewed participants and data anonymization to protect individual privacy.
+          </p>
+        </div>
+      </div>
+
+      <section class="scroll-mt-20">
+        <div class="text-center ">
+          <h2 class="text-3xl font-bold text-gray-900 mb-2">References</h2>
+          <!-- <p class="text-lg text-gray-600">Academic and institutional sources supporting this analysis</p> -->
+        </div>
+    
+        <div class="bg-white rounded-lg shadow-sm border">
+          <div class="p-8">
+            <div class="space-y-4 text-sm">
+              <div *ngFor="let reference of references; let i = index" class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                <span class="text-blue-600 font-medium min-w-[2rem]">[{{ i + 1 }}]</span>
+                <span class="text-gray-700">{{ reference }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </main>
+
+
 </div>

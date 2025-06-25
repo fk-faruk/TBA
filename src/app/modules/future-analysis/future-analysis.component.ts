@@ -10,6 +10,7 @@ export class FutureAnalysisComponent {
 
 
    activeTab = 0
+   activeTab2 = 0
     tabs = ["Correlation Analysis", "Trend Analysis", "Time series Analysis and Heatmaps"]
 
     tabs2 = ['Clustering', 'Geospatial Analysis', 'Predictive Analysis']
@@ -103,6 +104,23 @@ export class FutureAnalysisComponent {
       mitigation: 'High frequency overnight into early Monday (0:00–2:00) and Saturday evenings. 	Shows repeated late-night spikes, indicating vandalism often occurs when surveillance is low.',
       severity: 'Low'
     }
+  ];
+
+  references = [
+    "Aston, E. et al. (2022). Technology and Police Legitimacy. Springer. Available at: https://link.springer.com/chapter/10.1007/978-3-030-83685-6_4 (Accessed: 20 June 2025).",
+    "Baillie, M. (2019). Behind the Camera: A Criminological Study of CCTV. University of Hull. Available at: https://crimsoc.hull.ac.uk/wp-content/uploads/2020/06/2020_Baillie_MACrim_CCTV.pdf (Accessed: 20 June 2025).",
+    "Brock, A. and Goodey, J. (2022). Policing HS2 Project. Springer. Available at: https://www.researchgate.net/publication/361657770 (Accessed: 20 June 2025).",
+    "Greenwood-Reeves, J. (2022). Vehicles of control: The securitisation of surveillant automobility. Security Journal, 35(3), pp.366–383. Available at: https://doi.org/10.1057/s41284-020-00266-y (Accessed: 20 June 2025).",
+    "Hansen, M.A. et al. (2022). Law Enforcement Websites. Available at: https://www.utupub.fi/handle/10024/159988 (Accessed: 20 June 2025).",
+    "Joshi, R. et al. (2023). Informal and Shared Mobility. Volvo Research and Educational Foundations. Available at: https://www.researchgate.net/publication/377442619 (Accessed: 20 June 2025).",
+    "Martin, E. (2020). Stakeholder Perceptions on Electrification of Motorcycle Taxis. TU Berlin. Available at: https://www.static.tu.berlin/fileadmin/www/40000121/Masterarbeiten/Emilie_Martin__2020.pdf (Accessed: 20 June 2025).",
+    "Martínez, I. (2021). The Future of the Automotive Industry. Springer. Available at: https://link.springer.com/content/pdf/10.1007/978-1-4842-7026-4.pdf (Accessed: 20 June 2025).",
+    "Shane, J. (2024). Advancing Proactive Policing. Springer. Available at: https://link.springer.com/content/pdf/10.1007/978-3-031-86126-0.pdf (Accessed: 20 June 2025).",
+    "Shukla, M. (2025). Security risks of urban elements in the street ecosystem. UCL Discovery. Available at: https://discovery.ucl.ac.uk/id/eprint/10206279/ (Accessed: 20 June 2025).",
+    "Smith, R. and Coxhead, J. (2024). Policing and investigating criminal activities by gangs using e-bikes. Special Topics in Policing, Springer. Available at: https://repository.uel.ac.uk/download/3edf8cdedc3469f8d152547418bd1f43118f30ddd2f03299d40fb355aa234dff/523152 (Accessed: 20 June 2025).",
+    "Witzell, J. et al. (2022). Exploring new mobility services. VTI Publications. Available at: https://www.diva-portal.org/smash/get/diva2:1651895/FULLTEXT01.pdf (Accessed: 20 June 2025).",
+    "Schräder, T. et al. (2024). Parents’ perspectives on transporting children in autonomous vehicles. Transport Research Part F, 97, pp.85–102. Available at: https://doi.org/10.1016/j.trf.2024.03.002 (Accessed: 20 June 2025).",
+    "Zhang, Y., Nelson, J.D. and Mulley, C. (2024). Learning from the evidence: Insights for regulating e-scooters. Transport Policy, 141, pp.62–73. Available at: https://doi.org/10.1016/j.tranpol.2024.04.009 (Accessed: 20 June 2025)."
   ];
 
     getBodyClass(): string {
